@@ -15,7 +15,7 @@ struct MainView: View {
                     Text("BIOLYST").font(.system(size: 30)).fontWeight(.bold).foregroundColor(.white)
                 }.position(x:110, y:75))
             Spacer()
-        }//modifica per git
+        }//mah
     }
 }
 
