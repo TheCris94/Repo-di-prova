@@ -11,7 +11,8 @@ import SwiftUI
 struct BiolystApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            MainView()
         }
     }
 }
