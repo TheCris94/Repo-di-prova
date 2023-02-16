@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var searchText = ""
+    @State var searchText: String
     @State private var selectedTab = "All"
     var tabs = ["All", "Ongoing"]
     
@@ -34,18 +34,35 @@ struct MainView: View {
                         .fill (Color.accentColor)
                     )
                 .position(x:200,  y:120)
-            
-            List(0..<3, id: \.self) { index in
-                Text(names[index])
-            }.frame(width: 393, height: 500).position(x: 190, y:450).searchable(text: $searchText)
-            
+            NavigationView{
+                List{
+                    ForEach(filtered, id:\.self){
+                        name in
+                        Text(name)
+                    }
+                }.searchable(text: $searchText)
+            }.frame(width: 393, height: 500).position(x: 190, y:400)
                 
         }
     }
+    
+    var filtered: [String]{
+        if searchText.isEmpty {
+            return names
+        }
+        return names.filter({
+            (nome: String) -> Bool in
+            if nome.lowercased().contains(searchText.lowercased())
+            {
+                return true
+            }else{ return false}
+        })
+    }
+}
     
     struct MainView_Previews: PreviewProvider {
         static var previews: some View {
             MainView(searchText: "")
         }
     }
-}
+
