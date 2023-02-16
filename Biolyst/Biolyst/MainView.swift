@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var searchText = ""
     @State private var selectedTab = "All"
     var tabs = ["All", "Ongoing"]
+    
+    var names = ["Energy eff", "water conse", "sustainable trans"]
     
     var body: some View {
         ZStack{
@@ -20,20 +23,29 @@ struct MainView: View {
                     }.position(x:110, y:75))
                 Spacer()
             }
-            Picker("What is your favorite color?", selection: $selectedTab){
+            Picker("", selection: $selectedTab){
                     ForEach(tabs, id: \.self) {
                         Text($0)
                     }
             }
                 .pickerStyle(.segmented)
+                .background (
+                    RoundedRectangle(cornerRadius:8)
+                        .fill (Color.accentColor)
+                    )
+                .position(x:200,  y:120)
+            
+            List(0..<3, id: \.self) { index in
+                Text(names[index])
+            }.frame(width: 393, height: 500).position(x: 190, y:450).searchable(text: $searchText)
+            
                 
-                .position(x:200, y:120)
         }
     }
     
     struct MainView_Previews: PreviewProvider {
         static var previews: some View {
-            MainView()
+            MainView(searchText: "")
         }
     }
 }
