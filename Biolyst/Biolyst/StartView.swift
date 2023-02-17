@@ -32,7 +32,7 @@ struct StartView: View {
                 }
             }.navigationDestination(for: Int.self){
                 i in   //qua sotto ci vanno le view del sondaggio
-                Text("ciao")
+                SondaggioUIView()
             }
         }
     }
