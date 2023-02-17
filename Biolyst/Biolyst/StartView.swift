@@ -8,29 +8,35 @@
 import SwiftUI
 
 struct StartView: View {
+    @State var nextWindow = [Int]()
     var body: some View {
-        ZStack{
-              Image("mainImage")
+        NavigationStack(path: $nextWindow){
+            ZStack{
+                Image("mainImage")
                     .fixedSize()
                     .ignoresSafeArea()
                     .opacity(0.85)
-                    
-            VStack{
-                  Text("BIOLYST")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-                  Button("Calculate your Carbon footprint"){
-                      /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                      
-                      
-                  }
-                    
                 
+                VStack{
+                    Text("BIOLYST")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                    
+                    
+                    Button("Calculate your Carbon footprint"){
+                        self.nextWindow.append(1)
+                        
+                    }
+                    
                 }
+            }.navigationDestination(for: Int.self){
+                i in   //qua sotto ci vanno le view del sondaggio
+                SondaggioUIView()
             }
         }
     }
+}
 
 struct StartView_Previews: PreviewProvider {
     static var previews: some View {
