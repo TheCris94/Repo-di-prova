@@ -7,8 +7,10 @@
 
 import SwiftUI
 
+
 struct StartView: View {
     @State var nextWindow = [Int]()
+    
     var body: some View {
         NavigationStack(path: $nextWindow){
             ZStack{
@@ -32,14 +34,23 @@ struct StartView: View {
                 }
             }.navigationDestination(for: Int.self){
                 i in   //qua sotto ci vanno le view del sondaggio
-                SondaggioUIView()
+                let dummyView = SondaggioUIView(nextWindow: $nextWindow)
+                switch i {
+                case 1:
+                    dummyView
+                case 2:
+                    Text("\(co2)")
+                default:
+                    Text("dsas")
+                }
             }
         }
     }
-}
-
-struct StartView_Previews: PreviewProvider {
-    static var previews: some View {
-        StartView()
+    
+    struct StartView_Previews: PreviewProvider {
+        static var previews: some View {
+            StartView()
+        }
     }
+    
 }
