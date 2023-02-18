@@ -49,9 +49,9 @@ struct Start1View: View {
                         Text("Find out how to reduce\n your emissions")
                             .font(.headline)
                             .multilineTextAlignment(.leading)
-                          
+                        
                     }
-                   
+                    
                     HStack{
                         Image("Leaf")
                             .padding(.leading, -39.0)
@@ -61,7 +61,9 @@ struct Start1View: View {
                     
                     Button("Continue"){
                         self.nextWindow.append(1)
-                    }
+                    } .offset(y:100)
+                    
+                      
                 }
                 
             }.navigationDestination(for: Int.self){
@@ -74,6 +76,7 @@ struct Start1View: View {
         
     }
 }
+
     
     
     struct Start1View_Previews: PreviewProvider {

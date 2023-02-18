@@ -24,10 +24,15 @@ struct StartView: View {
                         .foregroundColor(.white)
                     
                     
-                    Button("Calculate your Carbon footprint"){
+                    Button("Calculate your Carbon footprint")
+                    {
                         self.nextWindow.append(1)
-                        
-                    }
+        
+                    }.offset(y:300)
+                     .foregroundColor(.white)
+                         
+                     
+                    
                     
                 }
             }.navigationDestination(for: Int.self){
