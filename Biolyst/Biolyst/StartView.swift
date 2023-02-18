@@ -30,6 +30,11 @@ struct StartView: View {
         
                     }.offset(y:300)
                      .foregroundColor(.white)
+                     .buttonStyle(.bordered)
+                     .tint(Color(hue: 0.398, saturation: 0.629, brightness: 0.63, opacity: 35))
+                     
+                     
+                     
                          
                      
                     

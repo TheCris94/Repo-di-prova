@@ -58,12 +58,14 @@ struct Start1View: View {
                         Text("Keep track of your progress")
                             .font(.headline)
                     }
-                    
                     Button("Continue"){
                         self.nextWindow.append(1)
                     } .offset(y:100)
+                        .foregroundColor(.white)
+                        .buttonStyle(.bordered)
+                        .tint(Color(hue: 0.398, saturation: 0.629, brightness: 0.63, opacity: 10))
+                        
                     
-                      
                 }
                 
             }.navigationDestination(for: Int.self){
