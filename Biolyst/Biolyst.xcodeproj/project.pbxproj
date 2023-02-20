@@ -17,7 +17,7 @@
 		2C714231299FB95200537A9B /* SOverflowExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C714230299FB95200537A9B /* SOverflowExample.swift */; };
 		2C714234299FBFB600537A9B /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 2C714233299FBFB600537A9B /* ACarousel */; };
 		2C714236299FC81000537A9B /* ListChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C714235299FC81000537A9B /* ListChecks.swift */; };
-		2C923D1329A10A5C0010A3F9 /* NavLinkExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C923D1229A10A5C0010A3F9 /* NavLinkExample.swift */; };
+		66987FC5299FE32A0073CCE4 /* Start1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66987FC4299FE32A0073CCE4 /* Start1View.swift */; };
 		66A42D72299EAA7900DA9AF5 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A42D71299EAA7900DA9AF5 /* StartView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		2C6CC74A299A76860093DEC5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2C714230299FB95200537A9B /* SOverflowExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOverflowExample.swift; sourceTree = "<group>"; };
 		2C714235299FC81000537A9B /* ListChecks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChecks.swift; sourceTree = "<group>"; };
-		2C923D1229A10A5C0010A3F9 /* NavLinkExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavLinkExample.swift; sourceTree = "<group>"; };
+		66987FC4299FE32A0073CCE4 /* Start1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start1View.swift; sourceTree = "<group>"; };
 		66A42D71299EAA7900DA9AF5 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,8 +71,8 @@
 				2C6CC73E299A762E0093DEC5 /* ContentView.swift */,
 				2C6CC74A299A76860093DEC5 /* MainView.swift */,
 				66A42D71299EAA7900DA9AF5 /* StartView.swift */,
+				66987FC4299FE32A0073CCE4 /* Start1View.swift */,
 				2C4D524D299F7A0800638472 /* SondaggioUIView.swift */,
-				2C923D1229A10A5C0010A3F9 /* NavLinkExample.swift */,
 				2C714235299FC81000537A9B /* ListChecks.swift */,
 				2C714230299FB95200537A9B /* SOverflowExample.swift */,
 				2C4D524B299F750000638472 /* ButtonView.swift */,
@@ -170,7 +170,7 @@
 				2C6CC73F299A762E0093DEC5 /* ContentView.swift in Sources */,
 				2C6CC74B299A76860093DEC5 /* MainView.swift in Sources */,
 				2C714231299FB95200537A9B /* SOverflowExample.swift in Sources */,
-				2C923D1329A10A5C0010A3F9 /* NavLinkExample.swift in Sources */,
+				66987FC5299FE32A0073CCE4 /* Start1View.swift in Sources */,
 				2C4D524C299F750000638472 /* ButtonView.swift in Sources */,
 				2C6CC73D299A762E0093DEC5 /* BiolystApp.swift in Sources */,
 				2C4D524E299F7A0800638472 /* SondaggioUIView.swift in Sources */,

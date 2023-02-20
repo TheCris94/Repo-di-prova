@@ -42,34 +42,13 @@ struct ListChecks : View {
                 
                 Text(selectKeeper.first ?? "")
                 
-                Text("ciao \(self.GetData())").offset(y:40)
-                
             }
         }
        
     }
-    
-    func GetData() -> Int{
-        let innerString = selectKeeper.first
-        switch innerString{
-        case "Rarely or never":
-            return 1
-        case "Three/four times a year":
-            return 2
-        case "Once a month":
-            return 3
-        case "More":
-            return 4
-        default:
-            return 0
-        }
-    }
-
 }
 struct ListChecks_Previews: PreviewProvider {
     static var previews: some View {
         ListChecks()
     }
 }
-
-
