@@ -9,10 +9,9 @@ import SwiftUI
 
 
 struct StartView: View {
-    @State var nextWindow = [Int]()
+    @Binding var nextWindow: [Int]
     
     var body: some View {
-        NavigationStack(path: $nextWindow){
             ZStack{
                 Image("mainImage")
                     .fixedSize()
@@ -27,29 +26,18 @@ struct StartView: View {
                     
                     
                     Button("Calculate your Carbon footprint"){
-                        self.nextWindow.append(1)
+                        self.nextWindow.append(2)
                         
                     }
                     
                 }
-            }.navigationDestination(for: Int.self){
-                i in   //qua sotto ci vanno le view del sondaggio
-                let dummyView = SondaggioUIView(nextWindow: $nextWindow)
-                switch i {
-                case 1:
-                    dummyView
-                case 2:
-                    Text("\(co2)")
-                default:
-                    Text("dsas")
-                }
             }
         }
-    }
+    
     
     struct StartView_Previews: PreviewProvider {
         static var previews: some View {
-            StartView()
+            StartView(nextWindow: .constant([0]))
         }
     }
     

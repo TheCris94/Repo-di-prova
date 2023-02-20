@@ -113,7 +113,7 @@ struct SondaggioUIView: View {
                 
                 Button("Submit") {
                     co2 = self.magicAlgorithm()
-                    nextWindow.append(2)
+                    nextWindow.append(3)
                 }.offset(y:300)
                 
                 
