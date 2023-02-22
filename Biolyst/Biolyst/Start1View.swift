@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Start1View: View {
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var nextWindow = [Int]()
     var body: some View {
         NavigationStack(path: $nextWindow){
@@ -79,6 +81,7 @@ struct Start1View: View {
                     Co2EmissionView(nextWindow: $nextWindow)
                 case 4:
                     MainView(nextWindow: $nextWindow, searchText: "")
+                    //self.presentationMode.wrappedValue.dismiss()
                 default:
                     Text("dsas")
                 }

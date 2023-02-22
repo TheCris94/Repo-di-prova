@@ -98,7 +98,7 @@ struct MainView: View {
                 }.frame(width: 397.0, height: 580).position(x: 190, y:431)
             }
                 
-        }
+        }.navigationBarBackButtonHidden(true)
     }
     
     /*

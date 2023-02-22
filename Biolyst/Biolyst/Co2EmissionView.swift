@@ -25,6 +25,8 @@ struct Co2EmissionView: View {
             
             Button("Go on") {
                 nextWindow.append(4)
+                //self.presentationMode.wrappedValue.dismiss()
+                
             }.offset(y:300)
         }
     }
