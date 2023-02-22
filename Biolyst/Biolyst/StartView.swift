@@ -12,6 +12,7 @@ struct StartView: View {
     @Binding var nextWindow: [Int]
     
     var body: some View {
+        
             ZStack{
                 Image("mainImage")
                     .fixedSize()

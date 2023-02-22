@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1545B729A62F1600B39500 /* Co2EmissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1545B629A62F1600B39500 /* Co2EmissionView.swift */; };
 		2C4D524C299F750000638472 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D524B299F750000638472 /* ButtonView.swift */; };
 		2C4D524E299F7A0800638472 /* SondaggioUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4D524D299F7A0800638472 /* SondaggioUIView.swift */; };
 		2C6CC73D299A762E0093DEC5 /* BiolystApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CC73C299A762E0093DEC5 /* BiolystApp.swift */; };
@@ -14,15 +15,17 @@
 		2C6CC741299A76300093DEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6CC740299A76300093DEC5 /* Assets.xcassets */; };
 		2C6CC744299A76300093DEC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C6CC743299A76300093DEC5 /* Preview Assets.xcassets */; };
 		2C6CC74B299A76860093DEC5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6CC74A299A76860093DEC5 /* MainView.swift */; };
-		2C6D937F29A36C0E00CA0026 /* Co2EmissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6D937E29A36C0E00CA0026 /* Co2EmissionView.swift */; };
 		2C714231299FB95200537A9B /* SOverflowExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C714230299FB95200537A9B /* SOverflowExample.swift */; };
 		2C714234299FBFB600537A9B /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 2C714233299FBFB600537A9B /* ACarousel */; };
 		2C714236299FC81000537A9B /* ListChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C714235299FC81000537A9B /* ListChecks.swift */; };
+		30820A0129A36E9A000647BC /* Picker example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30820A0029A36E9A000647BC /* Picker example.swift */; };
+		30820A0329A3933A000647BC /* activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30820A0229A3933A000647BC /* activities.swift */; };
 		66987FC5299FE32A0073CCE4 /* Start1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66987FC4299FE32A0073CCE4 /* Start1View.swift */; };
 		66A42D72299EAA7900DA9AF5 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A42D71299EAA7900DA9AF5 /* StartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1545B629A62F1600B39500 /* Co2EmissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co2EmissionView.swift; sourceTree = "<group>"; };
 		2C4D524B299F750000638472 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		2C4D524D299F7A0800638472 /* SondaggioUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SondaggioUIView.swift; sourceTree = "<group>"; };
 		2C6CC739299A762E0093DEC5 /* Biolyst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biolyst.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,9 +34,10 @@
 		2C6CC740299A76300093DEC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C6CC743299A76300093DEC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2C6CC74A299A76860093DEC5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		2C6D937E29A36C0E00CA0026 /* Co2EmissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co2EmissionView.swift; sourceTree = "<group>"; };
 		2C714230299FB95200537A9B /* SOverflowExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOverflowExample.swift; sourceTree = "<group>"; };
 		2C714235299FC81000537A9B /* ListChecks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChecks.swift; sourceTree = "<group>"; };
+		30820A0029A36E9A000647BC /* Picker example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Picker example.swift"; sourceTree = "<group>"; };
+		30820A0229A3933A000647BC /* activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activities.swift; sourceTree = "<group>"; };
 		66987FC4299FE32A0073CCE4 /* Start1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start1View.swift; sourceTree = "<group>"; };
 		66A42D71299EAA7900DA9AF5 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,10 +76,12 @@
 				2C6CC73C299A762E0093DEC5 /* BiolystApp.swift */,
 				2C6CC73E299A762E0093DEC5 /* ContentView.swift */,
 				2C6CC74A299A76860093DEC5 /* MainView.swift */,
+				30820A0229A3933A000647BC /* activities.swift */,
 				66A42D71299EAA7900DA9AF5 /* StartView.swift */,
-				66987FC4299FE32A0073CCE4 /* Start1View.swift */,
-				2C6D937E29A36C0E00CA0026 /* Co2EmissionView.swift */,
+				30820A0029A36E9A000647BC /* Picker example.swift */,
+				2C1545B629A62F1600B39500 /* Co2EmissionView.swift */,
 				2C4D524D299F7A0800638472 /* SondaggioUIView.swift */,
+				66987FC4299FE32A0073CCE4 /* Start1View.swift */,
 				2C714235299FC81000537A9B /* ListChecks.swift */,
 				2C714230299FB95200537A9B /* SOverflowExample.swift */,
 				2C4D524B299F750000638472 /* ButtonView.swift */,
@@ -172,12 +178,14 @@
 				2C714236299FC81000537A9B /* ListChecks.swift in Sources */,
 				2C6CC73F299A762E0093DEC5 /* ContentView.swift in Sources */,
 				2C6CC74B299A76860093DEC5 /* MainView.swift in Sources */,
+				30820A0329A3933A000647BC /* activities.swift in Sources */,
 				2C714231299FB95200537A9B /* SOverflowExample.swift in Sources */,
 				66987FC5299FE32A0073CCE4 /* Start1View.swift in Sources */,
 				2C4D524C299F750000638472 /* ButtonView.swift in Sources */,
 				2C6CC73D299A762E0093DEC5 /* BiolystApp.swift in Sources */,
+				30820A0129A36E9A000647BC /* Picker example.swift in Sources */,
 				2C4D524E299F7A0800638472 /* SondaggioUIView.swift in Sources */,
-				2C6D937F29A36C0E00CA0026 /* Co2EmissionView.swift in Sources */,
+				2C1545B729A62F1600B39500 /* Co2EmissionView.swift in Sources */,
 				66A42D72299EAA7900DA9AF5 /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,7 +315,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Biolyst/Preview Content\"";
-				DEVELOPMENT_TEAM = 3NBP8CPF9U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -336,7 +343,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Biolyst/Preview Content\"";
-				DEVELOPMENT_TEAM = 3NBP8CPF9U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

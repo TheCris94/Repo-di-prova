@@ -69,7 +69,7 @@ struct Start1View: View {
                 }
                 
             }.navigationDestination(for: Int.self){
-                i in   //qua sotto ci vanno le view del sondaggio
+                i in
                 switch i {
                 case 1:
                     StartView(nextWindow: $nextWindow)
@@ -77,6 +77,8 @@ struct Start1View: View {
                     SondaggioUIView(nextWindow: $nextWindow)
                 case 3:
                     Co2EmissionView(nextWindow: $nextWindow)
+                case 4:
+                    MainView(nextWindow: $nextWindow, searchText: "")
                 default:
                     Text("dsas")
                 }

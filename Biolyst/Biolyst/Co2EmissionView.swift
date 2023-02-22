@@ -2,16 +2,14 @@
 //  Co2EmissionView.swift
 //  Biolyst
 //
-//  Created by cristianvaccarella on 20/02/23.
+//  Created by cristianvaccarella on 22/02/23.
 //
 
 import SwiftUI
 
 struct Co2EmissionView: View {
     @Binding var nextWindow: [Int]
-    
     var body: some View {
-        
         ZStack{
             Image("mainImage")
                 .fixedSize()
@@ -29,7 +27,6 @@ struct Co2EmissionView: View {
                 nextWindow.append(4)
             }.offset(y:300)
         }
-        
     }
 }
 
