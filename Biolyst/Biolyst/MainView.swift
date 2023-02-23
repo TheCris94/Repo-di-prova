@@ -36,7 +36,8 @@ struct MainView: View {
                     RoundedRectangle(cornerRadius:8)
                         .fill (Color.accentColor)
                     )
-                .position(x:200,  y:120)
+                .position(x:183,  y:120)
+                .frame(width:370)
             if selectedTab == "All" {
                 NavigationView{
                     List{
@@ -88,7 +89,7 @@ struct MainView: View {
                             }
                         }
                     }.searchable(text: $searchText)
-                }.frame(width: 397.0, height: 580).position(x: 190, y:431)
+                }.frame(width: 397.0, height: 580).position(x: 197, y:431)
                 
                 Text("Your estimated Co2 emission is \(co2) tons").fontWeight(.light).offset(y:375)
                 
@@ -146,7 +147,7 @@ struct MainView: View {
                             }
                         }
                     }.searchable(text: $searchText)
-                }.frame(width: 397.0, height: 580).position(x: 190, y:431)
+                }.frame(width: 397.0, height: 580).position(x: 197, y:431)
             }
                 
         }.navigationBarBackButtonHidden(true)
